@@ -12,7 +12,7 @@
   <link rel="canonical" href="https://alevelmathsonline.co.uk/">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="icon" href="favicon.ico">
-  <link rel="preload" as="image" href="hero.png">
+  <link rel="preload" as="image" href="hero.webp" type="image/webp">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -42,7 +42,8 @@
         "@id": "https://alevelmathsonline.co.uk/#website",
         "url": "https://alevelmathsonline.co.uk/",
         "name": "alevelmathsonline.co.uk",
-        "description": "Online A-level Maths and Further Maths revision courses. Small groups. Easter, summer and Christmas intensives. Taught by Dr Anthony Korte."
+        "description": "Online A-level Maths and Further Maths revision courses. Small groups. Easter, summer and Christmas intensives. Taught by Dr Anthony Korte.",
+        "dateModified": "2026-04-07"
       },
       {
         "@type": "Person",
@@ -50,11 +51,14 @@
         "name": "Dr Anthony Korte",
         "honorificPrefix": "Dr",
         "jobTitle": "A-level Mathematics Tutor",
-        "description": "Oxford First and Imperial College PhD. Experienced A-level Maths and Further Maths tutor teaching intensive online revision courses in small groups.",
+        "description": "Oxford First and Imperial College PhD. Experienced A-level Maths tutor and Further Maths tutor teaching intensive online revision courses in small groups.",
         "image": {
           "@type": "ImageObject",
           "url": "https://physicsandmathscourses.com/images/anthony-korte.jpg",
-          "contentUrl": "https://physicsandmathscourses.com/images/anthony-korte.jpg"
+          "contentUrl": "https://physicsandmathscourses.com/images/anthony-korte.jpg",
+          "width": 800,
+          "height": 800,
+          "caption": "Dr Anthony Korte — A-level Maths and Further Maths Tutor"
         },
         "url": "https://physicsandmathscourses.com",
         "sameAs": [
@@ -105,16 +109,8 @@
         "@id": "https://alevelmathsonline.co.uk/#course-maths",
         "name": "Online A-level Maths Revision Course",
         "description": "Intensive online A-level Mathematics revision. Small group tuition covering Pure Mathematics, Statistics and Mechanics for Edexcel, AQA, OCR A and OCR B.",
-        "provider": {
-          "@type": "Person",
-          "@id": "https://physicsandmathscourses.com/#anthony-korte",
-          "name": "Dr Anthony Korte"
-        },
-        "instructor": {
-          "@type": "Person",
-          "@id": "https://physicsandmathscourses.com/#anthony-korte",
-          "name": "Dr Anthony Korte"
-        },
+        "provider": {"@id": "https://physicsandmathscourses.com/#anthony-korte"},
+        "instructor": {"@id": "https://physicsandmathscourses.com/#anthony-korte"},
         "courseMode": "online",
         "inLanguage": "en-GB",
         "educationalLevel": "A-level",
@@ -124,26 +120,36 @@
         "hasCourseInstance": [
           {
             "@type": "CourseInstance",
+            "name": "Easter A-level Maths Intensive 2026",
+            "courseMode": "online",
+            "startDate": "2026-04-07",
+            "endDate": "2026-04-10",
+            "location": {"@type": "VirtualLocation", "url": "https://zoom.us"},
+            "instructor": {"@id": "https://physicsandmathscourses.com/#anthony-korte"},
+            "organizer": {"@id": "https://physicsandmathscourses.com/#organization"},
+            "offers": {
+              "@type": "Offer",
+              "price": "295",
+              "priceCurrency": "GBP",
+              "priceValidUntil": "2026-04-10",
+              "availability": "https://schema.org/InStock",
+              "url": "https://physicsandmathscourses.com/book-a-course/a-level-maths-revision-courses.html"
+            }
+          },
+          {
+            "@type": "CourseInstance",
             "name": "Summer A-level Maths Intensive 2026",
             "courseMode": "online",
             "startDate": "2026-08-23",
             "endDate": "2026-08-24",
-            "location": {
-              "@type": "VirtualLocation",
-              "url": "https://zoom.us"
-            },
-            "instructor": {
-              "@type": "Person",
-              "@id": "https://physicsandmathscourses.com/#anthony-korte",
-              "name": "Dr Anthony Korte"
-            },
-            "organizer": {
-              "@id": "https://physicsandmathscourses.com/#organization"
-            },
+            "location": {"@type": "VirtualLocation", "url": "https://zoom.us"},
+            "instructor": {"@id": "https://physicsandmathscourses.com/#anthony-korte"},
+            "organizer": {"@id": "https://physicsandmathscourses.com/#organization"},
             "offers": {
               "@type": "Offer",
               "price": "165",
               "priceCurrency": "GBP",
+              "priceValidUntil": "2026-12-31",
               "availability": "https://schema.org/InStock",
               "url": "https://physicsandmathscourses.com/book-a-course/a-level-maths-revision-courses.html"
             }
@@ -154,22 +160,14 @@
             "courseMode": "online",
             "startDate": "2026-12-30",
             "endDate": "2026-12-31",
-            "location": {
-              "@type": "VirtualLocation",
-              "url": "https://zoom.us"
-            },
-            "instructor": {
-              "@type": "Person",
-              "@id": "https://physicsandmathscourses.com/#anthony-korte",
-              "name": "Dr Anthony Korte"
-            },
-            "organizer": {
-              "@id": "https://physicsandmathscourses.com/#organization"
-            },
+            "location": {"@type": "VirtualLocation", "url": "https://zoom.us"},
+            "instructor": {"@id": "https://physicsandmathscourses.com/#anthony-korte"},
+            "organizer": {"@id": "https://physicsandmathscourses.com/#organization"},
             "offers": {
               "@type": "Offer",
               "price": "165",
               "priceCurrency": "GBP",
+              "priceValidUntil": "2026-12-31",
               "availability": "https://schema.org/InStock",
               "url": "https://physicsandmathscourses.com/book-a-course/a-level-maths-revision-courses.html"
             }
@@ -181,40 +179,88 @@
         "@id": "https://alevelmathsonline.co.uk/#course-further-maths",
         "name": "Online A-level Further Maths Revision Course",
         "description": "Intensive online A-level Further Mathematics revision. Small group tuition covering additional pure mathematics, complex numbers, matrices, differential equations, and further statistics and mechanics options.",
-        "provider": {
-          "@type": "Person",
-          "@id": "https://physicsandmathscourses.com/#anthony-korte",
-          "name": "Dr Anthony Korte"
-        },
-        "instructor": {
-          "@type": "Person",
-          "@id": "https://physicsandmathscourses.com/#anthony-korte",
-          "name": "Dr Anthony Korte"
-        },
+        "provider": {"@id": "https://physicsandmathscourses.com/#anthony-korte"},
+        "instructor": {"@id": "https://physicsandmathscourses.com/#anthony-korte"},
         "courseMode": "online",
         "inLanguage": "en-GB",
         "educationalLevel": "A-level",
         "coursePrerequisites": "A-level Mathematics (Year 12 or Year 13)",
         "image": "https://physicsandmathscourses.com/images/anthony-korte.jpg",
-        "url": "https://alevelmathsonline.co.uk/"
+        "url": "https://alevelmathsonline.co.uk/",
+        "hasCourseInstance": [
+          {
+            "@type": "CourseInstance",
+            "name": "Easter A-level Further Maths Intensive 2026",
+            "courseMode": "online",
+            "startDate": "2026-04-07",
+            "endDate": "2026-04-10",
+            "location": {"@type": "VirtualLocation", "url": "https://zoom.us"},
+            "instructor": {"@id": "https://physicsandmathscourses.com/#anthony-korte"},
+            "organizer": {"@id": "https://physicsandmathscourses.com/#organization"},
+            "offers": {
+              "@type": "Offer",
+              "price": "295",
+              "priceCurrency": "GBP",
+              "priceValidUntil": "2026-04-10",
+              "availability": "https://schema.org/InStock",
+              "url": "https://physicsandmathscourses.com/book-a-course/a-level-maths-revision-courses.html"
+            }
+          },
+          {
+            "@type": "CourseInstance",
+            "name": "Summer A-level Further Maths Intensive 2026",
+            "courseMode": "online",
+            "startDate": "2026-08-23",
+            "endDate": "2026-08-24",
+            "location": {"@type": "VirtualLocation", "url": "https://zoom.us"},
+            "instructor": {"@id": "https://physicsandmathscourses.com/#anthony-korte"},
+            "organizer": {"@id": "https://physicsandmathscourses.com/#organization"},
+            "offers": {
+              "@type": "Offer",
+              "price": "165",
+              "priceCurrency": "GBP",
+              "priceValidUntil": "2026-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://physicsandmathscourses.com/book-a-course/a-level-maths-revision-courses.html"
+            }
+          },
+          {
+            "@type": "CourseInstance",
+            "name": "Christmas A-level Further Maths Intensive 2026",
+            "courseMode": "online",
+            "startDate": "2026-12-30",
+            "endDate": "2026-12-31",
+            "location": {"@type": "VirtualLocation", "url": "https://zoom.us"},
+            "instructor": {"@id": "https://physicsandmathscourses.com/#anthony-korte"},
+            "organizer": {"@id": "https://physicsandmathscourses.com/#organization"},
+            "offers": {
+              "@type": "Offer",
+              "price": "165",
+              "priceCurrency": "GBP",
+              "priceValidUntil": "2026-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://physicsandmathscourses.com/book-a-course/a-level-maths-revision-courses.html"
+            }
+          }
+        ]
       },
       {
         "@type": "EducationalOrganization",
         "@id": "https://physicsandmathscourses.com/#organization",
         "name": "Physics and Maths Courses",
         "url": "https://physicsandmathscourses.com",
-        "sameAs": "https://alevelmathsonline.co.uk/",
         "description": "Online A-level Physics, Mathematics and Further Mathematics revision courses, and university admissions test preparation. Small group tuition by Dr Anthony Korte."
       },
       {
         "@type": "FAQPage",
+        "@id": "https://alevelmathsonline.co.uk/#faqpage",
         "mainEntity": [
           {
             "@type": "Question",
             "name": "What is an A-level Maths revision course?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "An A-level Maths revision course is an intensive online programme designed to consolidate syllabus understanding and build exam technique ahead of A-level examinations. Dr Korte's courses cover Pure Mathematics, Statistics and Mechanics in small groups, with targeted support for Edexcel, AQA, OCR A and OCR B students."
+              "text": "An A-level Maths revision course is an intensive online programme designed to consolidate syllabus understanding and build exam technique ahead of A-level examinations. Dr Korte's courses cover Pure Mathematics (algebra, coordinate geometry, calculus, trigonometry, sequences and series), Statistics, and Mechanics in small groups via Zoom, with targeted support for Edexcel, AQA, OCR A and OCR B students. Each session works through past-paper style questions in real time, with Dr Korte explaining methods, identifying common errors, and adapting to the questions that arise. The Easter intensive is particularly popular for Year 13 students preparing for summer exams, while the Christmas and summer courses suit both year groups. Course fees range from £95 for a 1-day session to £295 for the 4-day Easter course."
             }
           },
           {
@@ -222,7 +268,7 @@
             "name": "Do you offer Further Maths tuition?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Courses cover both A-level Mathematics and A-level Further Mathematics. Further Maths tuition covers the additional pure mathematics, statistics, mechanics and decision mathematics content required for the Further Maths A-level, and is available as part of the same small group online programme."
+              "text": "Yes. Courses cover both A-level Mathematics and A-level Further Mathematics. Further Maths tuition covers the additional pure mathematics, statistics, mechanics and decision mathematics content required for the Further Maths A-level, and is available as part of the same small group online programme. Dr Korte's MSc in Mathematical Modelling from University College London covers much of the same advanced material — complex numbers, differential equations, matrices, polar coordinates — that appears in Further Maths A-level, giving him an unusually deep command of the subject from first principles. Edexcel, AQA, OCR A and OCR B are all covered. Further Maths students benefit from dedicated sessions tailored to their additional content requirements."
             }
           },
           {
@@ -230,7 +276,7 @@
             "name": "Which exam boards do you cover for Maths?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Courses cover all major UK A-level Mathematics exam boards: Edexcel, AQA, OCR A and OCR B."
+              "text": "Courses cover all major UK A-level Mathematics exam boards: Edexcel, AQA, OCR A and OCR B. While the core content — Pure Mathematics, Statistics, and Mechanics — is broadly consistent across all four boards, there are differences in question style, formula sheet provision, and the weighting of statistical topics. Dr Korte is familiar with the specific requirements of each board and tailors examples and past-paper practice to the board each student sits. Students should confirm their exam board when booking so that the right past papers and mark schemes can be prioritised during the session."
             }
           },
           {
@@ -238,7 +284,7 @@
             "name": "How does online Maths tuition work?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sessions run live via Zoom in small groups. Dr Korte teaches using shared digital materials, works through problems in real time, and tailors explanations to the questions that arise. Students need only a device with internet access."
+              "text": "Sessions run live via Zoom in small groups. Dr Korte teaches using shared digital materials, works through problems in real time, and tailors explanations to the questions that arise. Students need only a device with internet access — no specialist software is required. The online format works particularly well for A-level Maths because problems can be displayed, annotated, and worked through step-by-step on a shared screen. Students are encouraged to ask questions throughout rather than waiting until the end of a topic. Sessions alternate between concept explanation, worked examples, and student practice, giving each student time to attempt problems before the solution is shown."
             }
           },
           {
@@ -246,7 +292,7 @@
             "name": "When are the Easter and summer Maths revision courses?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Easter intensive courses run during the Easter school holiday period in April — ideal for final exam preparation before the summer exams. Summer intensive courses run in August, ahead of resit examinations or Year 12 progression. Christmas intensive courses run between Christmas and New Year, giving Year 12 students a head start on their second term and Year 13 students early exam preparation. Exact dates and booking are at physicsandmathscourses.com."
+              "text": "Easter intensive courses run during the Easter school holiday period in April — ideal for final exam preparation before the summer exams. The 2026 Easter course runs 7–10 April (4-day, £295) with shorter 2-day options on 7–8 April (Year 1) and 9–10 April (Year 2, £165 each). Summer intensive courses run in August — the 2026 summer course runs 23–24 August (£165), ahead of resit examinations or Year 12 progression. Christmas intensive courses run between Christmas and New Year — the 2026 Christmas course runs 30–31 December (£165), giving Year 12 students a head start on their second term and Year 13 students early exam preparation. Exact dates and booking are at physicsandmathscourses.com."
             }
           },
           {
@@ -254,7 +300,23 @@
             "name": "Is the course suitable for Year 12 and Year 13?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Courses are available for both Year 12 students consolidating their first year of A-level Maths and Year 13 students preparing for final examinations. Course content is tailored to the specific year group and exam board of each cohort."
+              "text": "Yes. Courses are available for both Year 12 students consolidating their first year of A-level Maths and Year 13 students preparing for final examinations. Course content is tailored to the specific year group and exam board of each cohort. Year 13 students typically focus on the full syllabus with past-paper technique and exam conditions practice, while Year 12 students consolidate core Pure and Statistics topics and build strong foundations for Year 2. The Christmas and summer courses are particularly popular with Year 12 students who want to get ahead, while the Easter intensive is primarily a Year 13 final preparation course. Dr Korte can advise on the most suitable course and timing for individual students."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much do A-level Maths revision courses cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Course fees are: 4-day Easter intensive (Year 1 & 2) — £295; 2-day courses (any session) — £165; 1-day courses — £95. The 4-day Easter course covers the full A-level Maths syllabus across both Year 1 and Year 2 content, making it the most comprehensive option for Year 13 students with summer exams approaching. 2-day courses are available for individual year groups at Easter, and for the summer and Christmas intensives. 1-to-1 tuition is also available — contact physicsandmathscourses.com for rates and availability. All prices are per student. Full details and booking at physicsandmathscourses.com."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who teaches the A-level Maths courses?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All courses are taught by Dr Anthony Korte — an experienced A-level Maths tutor with a First Class degree in Physics from the University of Oxford (ranked 2nd in entrance examinations worldwide), an MSc with Distinction in Mathematical Modelling from University College London, and a PhD in Theoretical Physics from Imperial College London. He is a Member of the Institute of Physics (MInstP). Dr Korte has taught A-level Mathematics and Further Mathematics extensively and brings a deep understanding of the mathematical methods that underpin both A-level content and university-level study, helping students develop genuine understanding rather than surface exam technique."
             }
           }
         ]
@@ -378,7 +440,7 @@
       background-color: #111;
       background-image:
         linear-gradient(rgba(10, 20, 50, 0.68), rgba(10, 20, 50, 0.68)),
-        url('hero.png');
+        url('hero.webp');
       background-size: cover;
       background-position: center;
       min-height: 60vh;
@@ -858,7 +920,7 @@
       <div class="wrap">
         <p class="hero__kicker a1">Online &middot; Small Groups &middot; UK A-level</p>
         <h1 class="a2">A-level Maths<br>Revision Courses</h1>
-        <p class="hero__sub a3">Intensive online A-level Mathematics and Further Mathematics revision. Expert tuition from an Oxford and Imperial-trained mathematician, in small groups.</p>
+        <p class="hero__sub a3">Intensive online A-level Maths and Further Maths revision. Taught by Dr&nbsp;Anthony Korte &mdash; Oxford First, Imperial PhD &mdash; in small groups via Zoom. Edexcel, AQA, OCR A and OCR B covered.</p>
         <a class="btn-hero a4" href="https://physicsandmathscourses.com" target="_blank" rel="noopener noreferrer">View Courses &amp; Book</a>
       </div>
     </section>
@@ -866,7 +928,7 @@
     <!-- ── Credentials ── -->
     <section class="credentials">
       <div class="wrap">
-        <span class="label">About the tutor</span>
+        <span class="label">Your A-level Maths Tutor</span>
         <h2>Dr&nbsp;Anthony Korte</h2>
         <ul class="cred-list">
           <li>
@@ -880,7 +942,7 @@
           </li>
         </ul>
         <p class="cred-body">
-          Dr Korte brings first-hand experience of mathematics and physics at the highest academic level, and is a Member of the Institute of Physics (MInstP). His intensive maths revision courses are built around genuine subject understanding &mdash; not just exam technique &mdash; giving students the depth of knowledge to tackle any question with confidence.
+          Dr Korte is an experienced A-level Maths tutor and Further Maths tutor whose academic background is unusually well suited to the subject. His MSc in Mathematical Modelling from UCL covers the same advanced mathematical methods &mdash; calculus, differential equations, complex numbers, linear algebra &mdash; that appear throughout A-level Further Mathematics. University-level physics is built entirely on the foundations tested at A-level: Pure Mathematics, Statistics, and Mechanics. This gives Dr Korte a depth of subject knowledge that goes well beyond the syllabus. He is a Member of the Institute of Physics (MInstP). For course enquiries, visit <a href="https://physicsandmathscourses.com" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.7);">physicsandmathscourses.com</a>.
         </p>
       </div>
     </section>
@@ -923,7 +985,7 @@
             </div>
           </div>
         </div>
-        <p class="courses-detail">Courses cover the complete A-level Mathematics syllabus: Pure Mathematics (algebra, coordinate geometry, calculus, trigonometry, sequences and series), Statistics and Mechanics. Further Mathematics courses extend to additional pure content including complex numbers, matrices, polar coordinates, differential equations, and further statistics and mechanics options. All students receive worked examples, exam-style questions and support tailored to their specific exam board.</p>
+        <p class="courses-detail">Courses cover the complete A-level Mathematics syllabus: Pure Mathematics (algebra, coordinate geometry, calculus, trigonometry, sequences and series), Statistics and Mechanics. Further Mathematics courses extend to additional pure content including complex numbers, matrices, polar coordinates, differential equations, and further statistics and mechanics options. All students receive worked examples, exam-style questions and support tailored to their specific exam board. <strong>2026 course dates:</strong> Easter 7&ndash;10 April (4-day, &pound;295; 2-day options also available); Summer 23&ndash;24 August (&pound;165); Christmas 30&ndash;31 December (&pound;165). Course fees range from &pound;95 for a 1-day session to &pound;295 for the full 4-day Easter course. Full details and booking at <a href="https://physicsandmathscourses.com/book-a-course/a-level-maths-revision-courses.html" target="_blank" rel="noopener noreferrer">physicsandmathscourses.com</a>.</p>
       </div>
     </section>
 
@@ -958,32 +1020,42 @@
 
           <div class="faq-item">
             <h3 class="faq-q">What is an A-level Maths revision course?</h3>
-            <p class="faq-a">An A-level Maths revision course is an intensive online programme designed to consolidate syllabus understanding and build exam technique ahead of A-level examinations. Dr&nbsp;Korte's courses cover Pure Mathematics, Statistics and Mechanics in small groups, with targeted support for Edexcel, AQA, OCR A and OCR B students.</p>
+            <p class="faq-a">An A-level Maths revision course is an intensive online programme designed to consolidate syllabus understanding and build exam technique ahead of A-level examinations. Dr&nbsp;Korte's courses cover Pure Mathematics (algebra, coordinate geometry, calculus, trigonometry, sequences and series), Statistics, and Mechanics in small groups via Zoom, with targeted support for Edexcel, AQA, OCR A and OCR B students. Each session works through past-paper style questions in real time, with Dr&nbsp;Korte explaining methods, identifying common errors, and adapting to the questions that arise. The Easter intensive is particularly popular for Year&nbsp;13 students preparing for summer exams, while the Christmas and summer courses suit both year groups. Course fees range from &pound;95 for a 1-day session to &pound;295 for the 4-day Easter course.</p>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-q">Do you offer Further Maths tuition?</h3>
-            <p class="faq-a">Yes. Courses cover both A-level Mathematics and A-level Further Mathematics. Further Maths tuition covers the additional pure mathematics, statistics, mechanics and decision mathematics content required for the Further Maths A-level, and is available as part of the same small group online programme.</p>
+            <p class="faq-a">Yes. Courses cover both A-level Mathematics and A-level Further Mathematics. Further Maths tuition covers the additional pure mathematics, statistics, mechanics and decision mathematics content required for the Further Maths A-level, and is available as part of the same small group online programme. Dr&nbsp;Korte's MSc in Mathematical Modelling from University College London covers much of the same advanced material &mdash; complex numbers, differential equations, matrices, polar coordinates &mdash; that appears in Further Maths A-level, giving him an unusually deep command of the subject from first principles. Edexcel, AQA, OCR A and OCR B are all covered. Further Maths students benefit from dedicated sessions tailored to their additional content requirements.</p>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-q">Which exam boards do you cover for Maths?</h3>
-            <p class="faq-a">Courses cover all major UK A-level Mathematics exam boards: Edexcel, AQA, OCR A and OCR B.</p>
+            <p class="faq-a">Courses cover all major UK A-level Mathematics exam boards: Edexcel, AQA, OCR A and OCR B. While the core content &mdash; Pure Mathematics, Statistics, and Mechanics &mdash; is broadly consistent across all four boards, there are differences in question style, formula sheet provision, and the weighting of statistical topics. Dr&nbsp;Korte is familiar with the specific requirements of each board and tailors examples and past-paper practice to the board each student sits. Students should confirm their exam board when booking so that the right past papers and mark schemes can be prioritised during the session.</p>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-q">How does online Maths tuition work?</h3>
-            <p class="faq-a">Sessions run live via Zoom in small groups. Dr&nbsp;Korte teaches using shared digital materials, works through problems in real time, and tailors explanations to the questions that arise. Students need only a device with internet access.</p>
+            <p class="faq-a">Sessions run live via Zoom in small groups. Dr&nbsp;Korte teaches using shared digital materials, works through problems in real time, and tailors explanations to the questions that arise. Students need only a device with internet access &mdash; no specialist software is required. The online format works particularly well for A-level Maths because problems can be displayed, annotated, and worked through step-by-step on a shared screen. Students are encouraged to ask questions throughout rather than waiting until the end of a topic. Sessions alternate between concept explanation, worked examples, and student practice, giving each student time to attempt problems before the solution is shown.</p>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-q">When are the Easter and summer Maths revision courses?</h3>
-            <p class="faq-a">Easter intensive courses run during the Easter school holiday period in April &mdash; ideal for final exam preparation before the summer exams. Summer intensive courses run in August, ahead of resit examinations or Year&nbsp;12 progression. Christmas intensive courses run between Christmas and New Year, giving Year&nbsp;12 students a head start on their second term and Year&nbsp;13 students early exam preparation. Exact dates and booking are at physicsandmathscourses.com.</p>
+            <p class="faq-a">Easter intensive courses run during the Easter school holiday period in April &mdash; ideal for final exam preparation before the summer exams. The 2026 Easter course runs 7&ndash;10 April (4-day, &pound;295) with shorter 2-day options on 7&ndash;8 April (Year&nbsp;1) and 9&ndash;10 April (Year&nbsp;2, &pound;165 each). Summer intensive courses run in August &mdash; the 2026 summer course runs 23&ndash;24 August (&pound;165), ahead of resit examinations or Year&nbsp;12 progression. Christmas intensive courses run between Christmas and New Year &mdash; the 2026 Christmas course runs 30&ndash;31 December (&pound;165), giving Year&nbsp;12 students a head start on their second term and Year&nbsp;13 students early exam preparation. Exact dates and booking are at physicsandmathscourses.com.</p>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-q">Is the course suitable for Year 12 and Year 13?</h3>
-            <p class="faq-a">Yes. Courses are available for both Year&nbsp;12 students consolidating their first year of A-level Maths and Year&nbsp;13 students preparing for final examinations. Course content is tailored to the specific year group and exam board of each cohort.</p>
+            <p class="faq-a">Yes. Courses are available for both Year&nbsp;12 students consolidating their first year of A-level Maths and Year&nbsp;13 students preparing for final examinations. Course content is tailored to the specific year group and exam board of each cohort. Year&nbsp;13 students typically focus on the full syllabus with past-paper technique and exam conditions practice, while Year&nbsp;12 students consolidate core Pure and Statistics topics and build strong foundations for Year&nbsp;2. The Christmas and summer courses are particularly popular with Year&nbsp;12 students who want to get ahead, while the Easter intensive is primarily a Year&nbsp;13 final preparation course. Dr&nbsp;Korte can advise on the most suitable course and timing for individual students.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">How much do A-level Maths revision courses cost?</h3>
+            <p class="faq-a">Course fees are: 4-day Easter intensive (Year 1 &amp; 2) &mdash; &pound;295; 2-day courses (any session) &mdash; &pound;165; 1-day courses &mdash; &pound;95. The 4-day Easter course covers the full A-level Maths syllabus across both Year&nbsp;1 and Year&nbsp;2 content, making it the most comprehensive option for Year&nbsp;13 students with summer exams approaching. 2-day courses are available for individual year groups at Easter, and for the summer and Christmas intensives. 1-to-1 tuition is also available &mdash; contact physicsandmathscourses.com for rates and availability. All prices are per student. Full details and booking at physicsandmathscourses.com.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Who teaches the A-level Maths courses?</h3>
+            <p class="faq-a">All courses are taught by Dr&nbsp;Anthony Korte &mdash; an experienced A-level Maths tutor with a First Class degree in Physics from the University of Oxford (ranked 2nd in entrance examinations worldwide), an MSc with Distinction in Mathematical Modelling from University College London, and a PhD in Theoretical Physics from Imperial College London. He is a Member of the Institute of Physics (MInstP). Dr&nbsp;Korte has taught A-level Mathematics and Further Mathematics extensively and brings a deep understanding of the mathematical methods that underpin both A-level content and university-level study, helping students develop genuine understanding rather than surface exam technique.</p>
           </div>
 
         </div>
