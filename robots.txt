@@ -17,3 +17,9 @@ Allow: /
 
 User-agent: GoogleOther
 Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
