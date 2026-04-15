@@ -657,13 +657,34 @@
       white-space: nowrap;
     }
 
-    .courses-detail {
-      font-size: 18px;
-      color: var(--ink-mid);
-      line-height: 1.7;
+    .courses-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
       margin-top: 1.75rem;
       padding-top: 1.75rem;
       border-top: 1px solid var(--rule);
+    }
+
+    .courses-list li {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      align-items: start;
+      gap: 0.75rem;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--ink-mid);
+    }
+
+    .courses-list li::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 2px;
+      background: var(--brand);
+      margin-top: 0.62em;
+      flex-shrink: 0;
     }
 
     /* ────────────────────────────────────────
@@ -977,7 +998,14 @@
             </div>
           </div>
         </div>
-        <p class="courses-detail">Each online maths revision session covers the complete A-level Mathematics syllabus: Pure Mathematics (algebra, coordinate geometry, calculus, trigonometry, sequences and series), Statistics and Mechanics. The A-level Further Maths course extends to additional pure content including complex numbers, matrices, polar coordinates, differential equations, and further statistics and mechanics options — all covered in the same small group online format. All students receive worked examples, exam-style questions and support tailored to their specific exam board. <strong>2026 A-level Maths dates:</strong> Easter 7&ndash;10 April (4-day &pound;295; 2-day options &pound;165); Summer 23&ndash;24 August (&pound;165); Christmas 30&ndash;31 December (&pound;165; 1-day &pound;95). <strong>Further Maths:</strong> Easter intensive only (annual); next course Easter 2027 (2-day &pound;195; 1-day &pound;125). Full details and booking at <a href="https://physicsandmathscourses.com/book-a-course/a-level-maths-revision-courses.html" target="_blank" rel="noopener noreferrer">physicsandmathscourses.com</a>.</p>
+        <ul class="courses-list">
+          <li><span>Each online maths revision session covers the complete A-level Mathematics syllabus: Pure Mathematics (algebra, coordinate geometry, calculus, trigonometry, sequences and series), Statistics and Mechanics.</span></li>
+          <li><span>The A-level Further Maths course extends to additional pure content including complex numbers, matrices, polar coordinates, differential equations, and further statistics and mechanics options &mdash; all covered in the same small group online format.</span></li>
+          <li><span>All students receive worked examples, exam questions and support tailored to their specific exam board.</span></li>
+          <li><span><strong>2026 A-level Maths dates:</strong> Easter 7&ndash;10 April (4-day &pound;295; 2-day options &pound;165); Summer 23&ndash;24 August (&pound;165); Christmas 30&ndash;31 December (&pound;165; 1-day &pound;95).</span></li>
+          <li><span><strong>Further Maths:</strong> Easter intensive only (annual); next course Easter 2027 (2-day &pound;195; 1-day &pound;125).</span></li>
+          <li><span>Full details and booking at <a href="https://physicsandmathscourses.com/book-a-course/a-level-maths-revision-courses.html" target="_blank" rel="noopener noreferrer">physicsandmathscourses.com</a>.</span></li>
+        </ul>
       </div>
     </section>
 
